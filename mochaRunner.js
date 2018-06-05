@@ -5,7 +5,7 @@ const mocha = new Mocha({
       reportDir:'./docs/mochawesome-reporter'
     }
 });
-mocha.addFile("./sevice/router.spec.js");
+mocha.addFile("./service/router.spec.js");
 mocha.run(function(){
     console.log("done");
     process.exit();

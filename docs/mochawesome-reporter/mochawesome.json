@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-05T13:59:51.377Z",
+    "end": "2018-06-05T13:59:51.422Z",
+    "duration": 45,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "b7405e00-3916-45c1-9b06-4470488fc874",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "16ee205e-ab66-46b4-ac06-2fccb58cee62",
+        "title": "后台接口测试",
+        "fullFile": "/Users/apple/www/QAtest/service/router.spec.js",
+        "file": "/service/router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口测试",
+            "fullTitle": "后台接口测试 test接口测试",
+            "timedOut": false,
+            "duration": 24,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "axios.get('http://localhost:10000/test')\n    .then(function (response) {\n        expect(response.status).to.equal(200)\n        if(response.data.data == 'hello world'){\n            done();\n        }else{\n            done(new Error(\"结果不符合预期\"));\n        }\n    })\n    .catch(function(error){\n        done(error);\n    })\n    // request('http://localhost:10000/test')\n    // .expect('Content-Type',/json/)\n    // .expect(200)\n    // .end(function (response) {\n    //     console.log(response);\n    //     if(response.data == 'hello world'){\n    //         done()\n    //     }else{\n    //         done(err);\n    //     }\n    // })",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b3013e46-50c2-4088-87bf-9f0d42b1680d",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b3013e46-50c2-4088-87bf-9f0d42b1680d"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 24,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
